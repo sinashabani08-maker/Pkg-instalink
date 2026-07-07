@@ -1,49 +1,51 @@
-#coded N3737GS 《KINGHacker》《sina》
+#coded N3737GS 《■》KINGHacker《■》
 
 #module of script
 import os
 import sys
 import time
-import random
 
-#banner of script
-print ('                KINGHacker♤SINA♤              ')
+#_color
+red = '\033[31m'
+reset = '\033[0m'
+green = '\033[32m'
 
-os.system("pkg update && pkg upgrade")
-os.system("pkg install python")
-os.system("pkg install python2")
-os.system("pkg install git")
-os.system("pkg install wget")
-os.system("pkg install curl")
-os.system("pkg install nano")
-os.system("pkg install vim")
-os.system("pkg install openssh")
-os.system("pkg install clang")
-os.system("pkg install make")
-os.system("pkg install gcc")
-os.system("pkg install python3")
-os.system("pkg install ruby")
-os.system("pkg install nodejs")
-os.system("pkg install php")
-os.system("pkg install perl")
-os.system("pkg install unzip")
-os.system("pkg install zip")
-os.system("pkg install tar")
-os.system("pkg install fish")
-os.system("pkg install proot")
-os.system("pkg install termux-tools")
+#banner
+print(f"""{red}
+  ____    _  __   ____                                                        
 
-# Install all Termux tools
+ |  _ \  | |/ /  / ___|                                                       
 
-import os
+ | |_) | | ' /  | |  _                                                        
 
-# Update package list
+ |  __/  | . \  | |_| |                                                       
+
+ |_|     |_|\_\  \____| {green}                                                      
+
+  ___   _   _   ____    _____      _      _       _       ___   _   _    ____ 
+
+ |_ _| | \ | | / ___|  |_   _|    / \    | |     | |     |_ _| | \ | |  / ___|
+
+  | |  |  \| | \___ \    | |     / _ \   | |     | |      | |  |  \| | | |  _ 
+
+  | |  | |\  |  ___) |   | |    / ___ \  | |___  | |___   | |  | |\  | | |_| |
+
+ |___| |_| \_| |____/    |_|   /_/   \_\ |_____| |_____| |___| |_| \_|  \____|
+
+                                                                              
+
+------------------------------------------------
+
+{reset}
+""")
 os.system('pkg update -y')
-
-# Upgrade installed packages
 os.system('pkg upgrade -y')
-
-# Install essential packages
+time.sleep(8)
+os.system('y')
+time.sleep(5)
+os.system('y')
+time.sleep(5)
+os.system('y')
 packages = [
     'git',
     'python',
@@ -73,6 +75,17 @@ packages = [
     'libxinerama-dev',
     'libxkbcommon-dev',
     'libxkbcommon-x11-dev',
+    'gcc',
+    'ruby',
+    'nodejs',
+    'php',
+    'perl',
+    'unzip',
+    'zip',
+    'tar',
+    'fish',
+    'proot', 
+    'termux-tools',
     ]
 for package in packages:
     os.system(f'pkg install {package} -y')
